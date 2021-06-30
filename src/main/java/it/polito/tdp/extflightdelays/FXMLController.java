@@ -42,6 +42,7 @@ public class FXMLController {
     	    d= Double.parseDouble(distanza);
     	} catch (NumberFormatException e) {
     		txtResult.setText("Errore nell'inserimento della distanza: devi inserire un valore numerico");
+    		return;
     	}
     	if (d!=-1) {
     		model.creaGrafo(d);
